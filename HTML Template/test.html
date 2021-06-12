@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h2 class="title">Featured Products</h2>
+		<!-- FilterElements-->
+		<div id="myBtnContainer">
+			<button class="btn active" onclick="tableSelection('products')"> Products</button>
+			<button class="btn" onclick="tableSelection('users')"> Users</button>
+			<button class="btn" onclick="tableSelection('orders')"> Orders</button>			
+		</div>
+
+        <table class="products admin-table">
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Product Brand</th>
+                <th>Product Price</th>
+                <th>Product Type</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Red T-shirt</td>
+                <td>Adidas</td>
+                <td>$50.00</td>
+                <td>Shirt</td>
+            </tr>
+        </table>
+        <table class="users admin-table">
+            <tr>
+                <th>User ID</th>
+                <th>User Name</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ngoc Anh</td>
+                <td>phicucon@gmail.com</td>
+            </tr>
+        </table>
+        <table class="orders admin-table">
+            <tr>
+                <th>Cart ID</th>
+                <th>User ID</th>
+                <th>Product ID</th>
+            </tr>
+        </table>
+        <script type="text/javascript" src="./admin-table.js" ></script>
+</body>
+</html>

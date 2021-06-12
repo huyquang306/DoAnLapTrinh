@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED STORE</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header"> 
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<img src="images/logo.png" width="125px">
+				</div>
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="./index.html">Home</a></li>
+						<li><a href="">Products</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="./login.html">Login</a></li>	
+					</ul>
+				</nav>
+				<img src="images/cart.png" width="30px" height="30px">
+				<img src="images/menu.png" class="menu-icon" onClick="menutoggle()">
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<h1> Give Your Workout <br> A New Style! </h1>
+					<a href="" class="btn1"> Explore Now &#8594</a>
+				</div>
+				<div class="col-2">
+					<img src="images/image1.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./menuToggle.js"></script>
+	<div class="categories">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-3">
+					<img src="images/category-1.jpg">
+				</div>
+				<div class="col-3">
+					<img src="images/category-2.jpg">
+				</div>
+				<div class="col-3">
+					<img src="images/category-3.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="small-container">
+		<h2 class="title">Featured Products</h2>
+		<!-- FilterElements-->
+		<div id="myBtnContainer">
+			<button class="btn active" onclick="filterSelection('all')"> Show All</button>
+			<button class="btn" onclick="filterSelection('shirt')"> Shirt</button>
+			<button class="btn" onclick="filterSelection('jeans')"> Jeans</button>
+			<button class="btn" onclick="filterSelection('sneaker')"> Sneaker</button>
+			<button class="btn" onclick="filterSelection('others')"> Others</button>
+		</div>
+		<div class="row-filterDiv">
+			<div class="filterDiv shirt">
+			  	<img src="./images/product-1.jpg">
+				<a href="./product-details.html">
+					<h4>Red T-Shirt</h4>	
+				</a>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> $50.00</p>		
+			</div>
+			<div class="filterDiv sneaker">
+			  	<img src="./images/product-2.jpg">
+				<h4>Sneakers 1</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> $50.00</p>
+			</div>
+			<div class="filterDiv jeans">
+			  	<img src="./images/product-3.jpg">
+				<h4>Jeans 1</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> $50.00</p>
+			</div>
+			<div class="filterDiv shirt">
+			  	<img src="./images/product-4.jpg">
+				<h4>Blue T-Shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> $50.00</p>
+			</div>
+			<div class="filterDiv sneaker">
+				<img src="./images/product-5.jpg">
+				<h4>Sneaker 2</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> $50.00</p>
+			</div>
+			<div class="filterDiv shirt">
+				<img src="./images/product-6.jpg">
+				<h4>Black T-Shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> $50.00</p>
+			</div>
+			<div class="filterDiv others">
+				<img src="./images/product-7.jpg">
+				<h4>Socks HRX</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> $50.00</p>
+			</div>
+			<div class="filterDiv others">
+				<img src="./images/product-8.jpg">
+				<h4>Watch 1</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> $50.00</p>
+			</div>
+			<div class="filterDiv others">
+				<img src="./images/product-9.jpg">
+				<h4>Watch 2</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> $50.00</p>
+			</div>
+			<div class="filterDiv sneaker">
+				<img src="./images/product-10.jpg">
+				<h4>Sneaker 3</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> $50.00</p>
+			</div>
+			<div class="filterDiv sneaker">
+				<img src="./images/product-11.jpg">
+				<h4>Sneaker 4</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> $50.00</p>
+			</div>
+			<div class="filterDiv jeans">
+				<img src="./images/product-12.jpg">
+				<h4>Jeans 2</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> $50.00</p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./filterSelection.js" ></script>
+
+		  
+	<div class="small-container">
+		<h2 class="title">Latest Products</h2>
+		<div class="row">
+			<div class="col-4">
+				<img src="images/product-5.jpg">
+				<h4> Sneakers </h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> $50.00</p>
+			</div>
+			<div class="col-4">
+				<img src="images/product-6.jpg">
+				<h4> Black T-Shirt </h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> $50.00</p>
+			</div>
+			<div class="col-4">
+				<img src="images/product-7.jpg">
+				<h4> Socks </h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> $50.00</p>
+			</div>
+			<div class="col-4">
+				<img src="images/product-8.jpg">
+				<h4> Watch </h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p> $50.00</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="offer">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-2">
+					<img src="images/exclusive.png" class="offer-image">
+				</div>
+				<div class="col-2">
+					<p> Exclusive Available on RedStore</p>
+					<h1>Smart Watch</h1>
+					<a href="" class="btn1"> Buy Now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="comment">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+					<p> Amazing. Goodjob! </p>					
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
+					<img src="images/user-1.png">
+					<h3> Marie Jane </h3>
+				</div>
+				<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+					<p> C'est incroyable </p>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
+					<img src="images/user-2.png">
+					<h3> Paul Pogba </h3>
+				</div>
+				<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+					<p> Perfect! </p>			
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
+					<img src="images/user-3.png">
+					<h3> Catherine </h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="advertisement">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-5">
+					<img src="images/logo-coca-cola.png">
+				</div>
+				<div class="col-5">
+					<img src="images/logo-godrej.png">
+				</div>
+				<div class="col-5">
+					<img src="images/logo-oppo.png">
+				</div>
+				<div class="col-5">
+					<img src="images/logo-paypal.png">
+				</div>
+				<div class="col-5">
+					<img src="images/logo-philips.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3> Download Our App</h3>
+					<div class="app-logo">
+						<img src="images/play-store.png">
+						<img src="images/app-store.png">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="images/logo-white.png">
+				</div>
+				<div class="footer-col-3">
+					<h3> Usefull links</h3>
+					<ul>
+						<li> Coupons</li>
+						<li> Blog Post</li>
+						<li> Return Policy</li>			
+						<li> Join Affiliate</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3> Follow Us</h3>
+					<ul>
+						<li> Facebook </li>
+						<li> YouTube </li>
+						<li> Instagram </li>			
+						<li> Twitter </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

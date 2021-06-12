@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED STORE</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header"> 
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<img src="images/logo.png" width="125px">
+				</div>
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="./index.html">Home</a></li>
+						<li><a href="">Products</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="">Login</a></li>	
+					</ul>
+				</nav>
+				<img src="images/cart.png" width="30px" height="30px">
+				<img src="images/menu.png" class="menu-icon" onClick="menutoggle()">
+			</div>			
+		</div>
+
+	<script type="text/javascript" src="./menuToggle.js"></script>
+	
+		<div class="account-page">
+			<div class="container">
+				<div class="row">
+					<div class="col-2">
+						<img src="./images/image1.png" width="100%">
+					</div>
+					<div class="col-2">
+						<div class="form-container">                                          
+							<form id="loginform">
+								<span>Login</span>
+								<input type="text" placeholder="Username">
+								<input type="password" placeholder="Password">
+								<button type="submit" class="btn">Login</button>
+								<a>Forgot Password</a>
+								<a onclick="register()">Create An Account</a>							
+							</form>
+							<form id="regform">
+								<span>Register</span>	
+								<input type="text" placeholder="Username">
+								<input type="email" placeholder="Email">
+								<input type="password" placeholder="Password">
+								<input type="password" placeholder="Confirm Password">
+								<button type="submit" class="btn">Register</button>
+								<a onclick="login()">Already Have An Account?</a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./login.js"></script>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3> Download Our App</h3>
+					<div class="app-logo">
+						<img src="images/play-store.png">
+						<img src="images/app-store.png">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="images/logo-white.png">
+				</div>
+				<div class="footer-col-3">
+					<h3> Usefull links</h3>
+					<ul>
+						<li> Coupons</li>
+						<li> Blog Post</li>
+						<li> Return Policy</li>			
+						<li> Join Affiliate</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3> Follow Us</h3>
+					<ul>
+						<li> Facebook </li>
+						<li> YouTube </li>
+						<li> Instagram </li>			
+						<li> Twitter </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
