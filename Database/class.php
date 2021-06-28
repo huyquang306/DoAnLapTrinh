@@ -101,7 +101,7 @@
         }
 
         //insert into cart table
-        public function insertIntoCart($params = null, $table = "cart")
+        /*public function insertIntoCart($params = null, $table = "cart")
         {
             if($this->db->con!=null){
                 if($params!=null){
@@ -117,13 +117,42 @@
                     return $result;
                 }
             }
-        }
+        }*/
 
-        public function addToCart($userid, $itemid){
+        /*public function addToCart($userid, $itemid){
             if(isset($userid) && isset($itemid)){
                 $params = array(
                     "_user_id" => $userid,
                     "item_id" => $itemid
+                );
+
+                $result = $this->insertIntoCart($params);               
+            }
+        }*/
+        public function insertIntoCart($params = null, $table = "cart")
+        {
+            if($this->db->con!=null){
+                if($params!=null){
+                    $column = implode(',',array_keys($params));
+                    $values = implode(',',array_values($params));
+
+                    $query_string = sprintf("INSERT INTO %s(%s) VALUES(%s)",$table,$column,$values);
+ 
+                    $result = $this->db->con->query($query_string);
+                    if($result){
+                        header("Location: test-cart.php");
+                    }
+                    return $result;
+                }
+            }
+        }
+
+        public function addToCart($userid, $itemid, $itemquantity){
+            if(isset($userid) && isset($itemid) && isset($itemquantity)){
+                $params = array(
+                    "_user_id" => $userid,
+                    "item_id" => $itemid,
+                    "item_quantity" => $itemquantity
                 );
 
                 $result = $this->insertIntoCart($params);               

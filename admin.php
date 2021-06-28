@@ -128,6 +128,7 @@
                     <th>Cart ID</th>
                     <th>User Name</th>
                     <th>Product </th>
+                    <th>Quantity</th>
                     <th>Delete</th>
                 </tr>
                 <?php foreach($cart_shuffle as $item): ?>
@@ -139,10 +140,11 @@
                         array_map(function($temp1,$temp2){                 
                     ?>                  
                     <td><?php echo $temp1['_user_name'] ?></td>
-                    <td><?php echo $temp2['item_name'] ?></td>
+                    <td><?php echo $temp2['item_name'] ?></td>                   
                     <?php
                         },$cart_user, $cart_product);
                     ?>
+                    <td><?php echo $item['item_quantity']?></td>
                     <td>
 						<form method="post">
 							<input type="hidden" value="<?php echo $item['cart_id'] ?>" name="cart_id">

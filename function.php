@@ -5,7 +5,7 @@
     //require Fetch Product Class
     require('Database/class.php');
 
-    function getSum($arr){
+    /*function getSum($arr){
         if(isset($arr)){
             $sum = 0;
             foreach($arr as $item){
@@ -13,7 +13,7 @@
             }
             return sprintf('$ %.2f',$sum);
         }
-    }
+    }*/
 
     //DB connection object
     $db = new DBController();
